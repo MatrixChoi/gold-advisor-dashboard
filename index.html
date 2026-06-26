@@ -56,6 +56,7 @@
     .pill.warn { color:#ffe09a; background:rgba(243,201,105,.12); border-color:rgba(243,201,105,.30); }
     .pill.danger { color:#ffb8c0; background:rgba(255,91,106,.12); border-color:rgba(255,91,106,.30); }
     .decision-board { display:grid; grid-template-columns:280px minmax(0,1fr) 330px; gap:10px; align-items:start; }
+    .left-stack { display:grid; gap:10px; min-width:0; align-content:start; }
     .center-stack { display:grid; gap:10px; min-width:0; align-content:start; }
     .panel,.hero-card,.scenario {
       border:1px solid var(--line); border-radius:var(--radius);
@@ -81,6 +82,14 @@
     .quick-grid span,.metric span { display:block; color:var(--muted); font-size:12px; }
     .quick-grid b { display:block; margin-top:6px; font-size:18px; }
     .summary { margin:0; color:#d5d0e3; font-size:13px; line-height:1.55; }
+    .discipline-list { list-style:none; margin:9px 0 0; padding:0; display:grid; gap:7px; }
+    .discipline-list li {
+      display:grid; grid-template-columns:22px 1fr; gap:8px; align-items:start;
+      border:1px solid var(--line); border-radius:12px; padding:8px;
+      background:rgba(8,7,13,.58); color:#ddd8e8; font-size:12px; line-height:1.36;
+    }
+    .discipline-list b { color:var(--gold); font-weight:700; }
+    .discipline-list span { width:22px; height:22px; display:grid; place-items:center; border-radius:8px; background:rgba(113,50,245,.16); color:#d8c8ff; font-size:12px; }
     .hero-card { padding:14px; position:relative; }
     .hero-card::before { content:""; position:absolute; inset:0; background:radial-gradient(circle at 85% 0%, rgba(113,50,245,.28), transparent 30%); pointer-events:none; }
     .hero-card.short { border-left:4px solid var(--red); }
@@ -186,32 +195,44 @@
         <p class="subtitle">主计划优先，突破/破位/反转预案齐备；盘后统计；硬规则：不隔夜。</p>
       </div>
       <div class="status-pills" aria-label="今日状态">
-        <span class="pill">刷新 2026-06-27 00:04</span>
+        <span class="pill">刷新 2026-06-27 00:13</span>
         <span class="pill">交易日 2026-06-26</span>
         <span class="pill warn">事件 中</span>
       </div>
     </header>
 
     <section class="decision-board">
-      <aside class="panel decision-card" aria-label="今日方向结论">
-        <div>
-          <div class="label">今日方向</div>
-          <div class="bias-title">
-            <strong>偏空</strong>
-            <div>
-              <div class="score-ring warn"><b>65</b></div>
-              <p class="score-caption">谨慎执行</p>
+      <div class="left-stack">
+        <aside class="panel decision-card" aria-label="今日方向结论">
+          <div>
+            <div class="label">今日方向</div>
+            <div class="bias-title">
+              <strong>偏空</strong>
+              <div>
+                <div class="score-ring warn"><b>65</b></div>
+                <p class="score-caption">谨慎执行</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="quick-grid">
-          <div><span>参考价</span><b>4008.91</b></div>
-          <div><span>信心</span><b>中</b></div>
-          <div><span>计划数</span><b>5</b></div>
-          <div><span>停止开仓</span><b>04:30</b></div>
-        </div>
-        <p class="summary">今日主线是弱势反弹空，核心压力看 4028-4035；但面板同时给出向上破位和向下破位的条件型方案。4000/3995 是第一支撑，不破不追空；4028/4035 重新站稳则不再按弱势空处理。</p>
-      </aside>
+          <div class="quick-grid">
+            <div><span>参考价</span><b>4008.91</b></div>
+            <div><span>信心</span><b>中</b></div>
+            <div><span>计划数</span><b>5</b></div>
+            <div><span>停止开仓</span><b>04:30</b></div>
+          </div>
+          <p class="summary">今日主线是弱势反弹空，核心压力看 4028-4035；但面板同时给出向上破位和向下破位的条件型方案。4000/3995 是第一支撑，不破不追空；4028/4035 重新站稳则不再按弱势空处理。</p>
+        </aside>
+
+        <section class="panel" aria-label="今日执行纪律">
+          <div class="label">今日执行纪律</div>
+          <ul class="discipline-list">
+            <li><span>1</span><div><b>未触发不做</b><br>只按计划触发价执行，不因为盘中波动临时追单。</div></li>
+            <li><span>2</span><div><b>数据窗口停手</b><br>重要数据公布前后至少 15 分钟停止新开仓。</div></li>
+            <li><span>3</span><div><b>停止开仓 04:30</b><br>到点后只管理已有仓位，不再开新单。</div></li>
+            <li><span>4</span><div><b>强制离场 04:50</b><br>不隔夜，避免隔夜持仓费用和流动性风险。</div></li>
+          </ul>
+        </section>
+      </div>
 
       <div class="center-stack">
         
