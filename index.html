@@ -107,6 +107,7 @@
     .metric.risk strong { color:#ffb8c0; }
     .rule-grid { display:grid; grid-template-columns:1fr 1fr; gap:7px; margin-top:8px; }
     .rule-grid article { border:1px solid var(--line); border-radius:12px; padding:9px; background:rgba(255,255,255,.035); }
+    .rule-grid .basis-card { grid-column:1 / -1; background:rgba(243,201,105,.07); border-color:rgba(243,201,105,.24); }
     .rule-grid span { color:var(--gold); font-size:12px; font-weight:700; }
     .rule-grid p { margin:5px 0 0; color:#ded9eb; font-size:12px; line-height:1.38; }
     .right-stack { display:grid; gap:10px; }
@@ -195,7 +196,7 @@
         <p class="subtitle">主计划优先，突破/破位/反转预案齐备；盘后统计；硬规则：不隔夜。</p>
       </div>
       <div class="status-pills" aria-label="今日状态">
-        <span class="pill">刷新 2026-06-27 04:55</span>
+        <span class="pill">刷新 2026-06-27 10:04</span>
         <span class="pill">交易日 2026-06-26</span>
         <span class="pill warn">事件 中</span>
       </div>
@@ -252,6 +253,7 @@
           <div class="rule-grid">
             <article><span>确认条件</span><p>M1/M5 冲高回落、上影线或假突破后重新跌回 4018 下方。</p></article>
             <article><span>取消条件</span><p>M5 有效站稳 4028 上方，或美元/美债同步下行导致黄金持续拉升。</p></article>
+            <article class="basis-card"><span>点位计算依据</span><p>触发价取 4018-4025 反弹区下沿，来自弱势反抽失败位；止损放在 4035 核心压力上方至 4038；TP1 看 4005 近端支撑，TP2 看 3995 下方流动性触发区。</p></article>
           </div>
         </section>
         
@@ -275,6 +277,7 @@
               <summary>确认/取消</summary>
               <p><b>确认：</b>价格进入 4028-4035 后无法站稳，并且 M5 收回 4028 下方。</p>
               <p><b>取消：</b>M5/M15 连续站稳 4035 上方，或上破 4051。</p>
+              <p><b>依据：</b>4028 是日内弱势分界，4035 是核心压力带上沿；触发取 4028 跌回确认，止损放 4042 留出假突破缓冲；TP1 回看 4005，TP2 看 3995。</p>
             </details>
           </td>
         </tr>
@@ -292,6 +295,7 @@
               <summary>确认/取消</summary>
               <p><b>确认：</b>M5/M15 有效站稳 4028 上方，回踩 4028-4032 不破，并且美元/美债没有同步上行。</p>
               <p><b>取消：</b>突破后快速跌回 4028 下方，或数据后美元/美债同步拉升。</p>
+              <p><b>依据：</b>上破多只在 4028/4035 重新站稳后启用；触发放在回踩 4028-4032 不破，止损在 4020 下方结构失效位；TP1 看 4038，TP2 看 4050 压力。</p>
             </details>
           </td>
         </tr>
@@ -309,6 +313,7 @@
               <summary>确认/取消</summary>
               <p><b>确认：</b>M5 跌破 3995 后反抽不回 4000，且 DXY/10Y 没有明显回落。</p>
               <p><b>取消：</b>跌破后迅速收回 4000 上方，或出现明显扫低反转。</p>
+              <p><b>依据：</b>3995 是下破触发区，反抽不上 4000 才顺势空；止损放 4004，覆盖 4000 整数关口假回收；TP1 看 3988，TP2 看 3975 扩展目标。</p>
             </details>
           </td>
         </tr>
@@ -326,6 +331,7 @@
               <summary>确认/取消</summary>
               <p><b>确认：</b>先扫破 3995/4000 后，M5 重新收回 4000 上方，且美元/美债没有同步拉升。</p>
               <p><b>取消：</b>跌破 3992 或反抽无法重新站上 4000。</p>
+              <p><b>依据：</b>4000 是整数关口和第一支撑，只有先扫破 3995/4000 后重新收回才做短多；止损放 3992 下方扫低失败位；TP1 看 4015，TP2 看 4025 反抽上沿。</p>
             </details>
           </td>
         </tr>
