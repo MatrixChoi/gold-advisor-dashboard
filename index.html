@@ -71,7 +71,7 @@
     .bias-title strong { font-size:40px; line-height:1; letter-spacing:-.06em; }
     .score-ring {
       width:74px; height:74px; border-radius:50%; display:grid; place-items:center;
-      border:1px solid var(--line-strong); background:conic-gradient(var(--purple) 65%, rgba(255,255,255,.06) 0);
+      border:1px solid var(--line-strong); background:conic-gradient(var(--purple) 72%, rgba(255,255,255,.06) 0);
       position:relative; flex:0 0 auto;
     }
     .score-ring::after { content:""; position:absolute; inset:7px; border-radius:50%; background:#11101a; }
@@ -196,9 +196,9 @@
         <p class="subtitle">主计划优先，突破/破位/反转预案齐备；盘后统计；硬规则：不隔夜。</p>
       </div>
       <div class="status-pills" aria-label="今日状态">
-        <span class="pill">刷新 2026-06-27 10:04</span>
-        <span class="pill">交易日 2026-06-26</span>
-        <span class="pill warn">事件 中</span>
+        <span class="pill">刷新 2026-06-29 09:45</span>
+        <span class="pill">交易日 2026-06-29</span>
+        <span class="pill good">事件 低</span>
       </div>
     </header>
 
@@ -210,18 +210,18 @@
             <div class="bias-title">
               <strong>偏空</strong>
               <div>
-                <div class="score-ring warn"><b>65</b></div>
+                <div class="score-ring warn"><b>72</b></div>
                 <p class="score-caption">谨慎执行</p>
               </div>
             </div>
           </div>
           <div class="quick-grid">
-            <div><span>参考价</span><b>4008.91</b></div>
+            <div><span>参考价</span><b>4065.10</b></div>
             <div><span>信心</span><b>中</b></div>
             <div><span>计划数</span><b>5</b></div>
             <div><span>停止开仓</span><b>04:30</b></div>
           </div>
-          <p class="summary">今日主线是弱势反弹空，核心压力看 4028-4035；但面板同时给出向上破位和向下破位的条件型方案。4000/3995 是第一支撑，不破不追空；4028/4035 重新站稳则不再按弱势空处理。</p>
+          <p class="summary">新一周开盘后，日线仍是强空结构，但 H1/H4 有反弹修复，当前不适合追空。主思路是等 4074-4088 反弹承压后做空；4048/4050 是日内下方关键分界，未有效跌破不追空，若扫低收回可做短多；若 4096/4100 被有效站稳，则偏空主线失效，转入上破跟多预案。</p>
         </aside>
 
         <section class="panel" aria-label="今日执行纪律">
@@ -242,18 +242,18 @@
             <span>主交易计划 / P1</span>
             <strong>S1 · 做空</strong>
           </div>
-          <h2>弱势主线下，等 4018-4025 反弹失败做空，不追低。</h2>
+          <h2>主计划：等 4074-4088 反弹承压后做空，不追低。</h2>
           <div class="execution-grid">
-            <div class="metric xl"><span>入场区</span><strong>4018.00-4025.00</strong></div>
-            <div class="metric focus"><span>触发价</span><strong>4018.00</strong></div>
-            <div class="metric risk"><span>止损</span><strong>4038.00</strong></div>
-            <div class="metric"><span>TP1</span><strong>4005.00</strong><em>0.65R</em></div>
-            <div class="metric"><span>TP2</span><strong>3995.00</strong><em>1.15R</em></div>
+            <div class="metric xl"><span>入场区</span><strong>4074.00-4088.00</strong></div>
+            <div class="metric focus"><span>触发价</span><strong>4074.00</strong></div>
+            <div class="metric risk"><span>止损</span><strong>4098.00</strong></div>
+            <div class="metric"><span>TP1</span><strong>4056.00</strong><em>0.75R</em></div>
+            <div class="metric"><span>TP2</span><strong>4048.00</strong><em>1.08R</em></div>
           </div>
           <div class="rule-grid">
-            <article><span>确认条件</span><p>M1/M5 冲高回落、上影线或假突破后重新跌回 4018 下方。</p></article>
-            <article><span>取消条件</span><p>M5 有效站稳 4028 上方，或美元/美债同步下行导致黄金持续拉升。</p></article>
-            <article class="basis-card"><span>点位计算依据</span><p>触发价取 4018-4025 反弹区下沿，来自弱势反抽失败位；止损放在 4035 核心压力上方至 4038；TP1 看 4005 近端支撑，TP2 看 3995 下方流动性触发区。</p></article>
+            <article><span>确认条件</span><p>M1/M5 进入 4074-4088 后冲高回落，重新跌回 4074 下方，且 DXY/10Y 没有同步下行。</p></article>
+            <article><span>取消条件</span><p>M5/M15 有效站稳 4088 上方，或上破 4096 后不再跌回。</p></article>
+            <article class="basis-card"><span>点位计算依据</span><p>触发价取 M5 近 20 根高点 4074 附近；止损放在前日高点 4096 上方到 4098；TP1 看 VWAP/均衡区 4056，TP2 看 M15/M5 近端低点 4048。</p></article>
           </div>
         </section>
         
@@ -267,17 +267,17 @@
               <tbody>
         <tr class="short">
           <td class="plan-id"><span>备用预案</span><b>S2 · 做空</b></td>
-          <td class="thesis-cell">4028-4035 核心压力带，不能站稳则按假突破做空。</td>
-          <td>4028.00</td>
-          <td class="risk-text">4042.00</td>
-          <td>4005.00</td>
-          <td>3995.00</td>
+          <td class="thesis-cell">二次压力：4096/4100 附近假突破失败后做空。</td>
+          <td>4096.00</td>
+          <td class="risk-text">4110.00</td>
+          <td>4074.00</td>
+          <td>4056.00</td>
           <td class="rule-cell">
             <details>
               <summary>确认/取消</summary>
-              <p><b>确认：</b>价格进入 4028-4035 后无法站稳，并且 M5 收回 4028 下方。</p>
-              <p><b>取消：</b>M5/M15 连续站稳 4035 上方，或上破 4051。</p>
-              <p><b>依据：</b>4028 是日内弱势分界，4035 是核心压力带上沿；触发取 4028 跌回确认，止损放 4042 留出假突破缓冲；TP1 回看 4005，TP2 看 3995。</p>
+              <p><b>确认：</b>先上破 4096/4100 但 M5 收不住，随后跌回 4096 下方。</p>
+              <p><b>取消：</b>M15 连续站稳 4100 上方，且 H1 继续放量上行。</p>
+              <p><b>依据：</b>4096 是前日高点，4100 是整数关口；触发取假突破后跌回 4096；止损放 4110 保留假破缓冲；TP1 回看 4074，TP2 回看 4056。</p>
             </details>
           </td>
         </tr>
@@ -285,17 +285,17 @@
 
         <tr class="long">
           <td class="plan-id"><span>上破预案</span><b>B1 · 做多</b></td>
-          <td class="thesis-cell">向上破位方案：只有站稳 4028/4035 后才做突破多。</td>
-          <td>4032.00</td>
-          <td class="risk-text">4020.00</td>
-          <td>4038.00</td>
-          <td>4050.00</td>
+          <td class="thesis-cell">上破预案：只有 4096/4100 站稳后才做突破多。</td>
+          <td>4100.00</td>
+          <td class="risk-text">4088.00</td>
+          <td>4118.00</td>
+          <td>4138.00</td>
           <td class="rule-cell">
             <details>
               <summary>确认/取消</summary>
-              <p><b>确认：</b>M5/M15 有效站稳 4028 上方，回踩 4028-4032 不破，并且美元/美债没有同步上行。</p>
-              <p><b>取消：</b>突破后快速跌回 4028 下方，或数据后美元/美债同步拉升。</p>
-              <p><b>依据：</b>上破多只在 4028/4035 重新站稳后启用；触发放在回踩 4028-4032 不破，止损在 4020 下方结构失效位；TP1 看 4038，TP2 看 4050 压力。</p>
+              <p><b>确认：</b>M5/M15 站稳 4096/4100 后回踩不破，且美元/美债没有同步走强。</p>
+              <p><b>取消：</b>突破后快速跌回 4088 下方，或 DXY/10Y 同步上行。</p>
+              <p><b>依据：</b>上破必须越过前日高点 4096 和 4100 整数关口；止损放 4088 下方，代表重新跌回 M15 压力带内；TP1 看 4118，TP2 看 H4 上方结构 4138。</p>
             </details>
           </td>
         </tr>
@@ -303,17 +303,17 @@
 
         <tr class="short">
           <td class="plan-id"><span>上破预案</span><b>B2 · 做空</b></td>
-          <td class="thesis-cell">向下破位方案：3995 失守后，反抽不上 4000 再顺势空。</td>
-          <td>3995.00</td>
-          <td class="risk-text">4004.00</td>
-          <td>3988.00</td>
-          <td>3975.00</td>
+          <td class="thesis-cell">下破预案：4048 失守后，反抽不上 4056 再顺势空。</td>
+          <td>4048.00</td>
+          <td class="risk-text">4058.00</td>
+          <td>4034.00</td>
+          <td>4000.00</td>
           <td class="rule-cell">
             <details>
               <summary>确认/取消</summary>
-              <p><b>确认：</b>M5 跌破 3995 后反抽不回 4000，且 DXY/10Y 没有明显回落。</p>
-              <p><b>取消：</b>跌破后迅速收回 4000 上方，或出现明显扫低反转。</p>
-              <p><b>依据：</b>3995 是下破触发区，反抽不上 4000 才顺势空；止损放 4004，覆盖 4000 整数关口假回收；TP1 看 3988，TP2 看 3975 扩展目标。</p>
+              <p><b>确认：</b>M5 有效跌破 4048 后，反抽不回 4056，并且 DXY/10Y 没有明显回落。</p>
+              <p><b>取消：</b>跌破后快速收回 4056 上方，或出现扫低反转。</p>
+              <p><b>依据：</b>4048 是 M15/M5 近端低点；跌破后若反抽不上 4056，说明均衡区转压力；止损放 4058；TP1 看 H4 VWAP 4034，TP2 看 4000 整数关口。</p>
             </details>
           </td>
         </tr>
@@ -321,17 +321,17 @@
 
         <tr class="long">
           <td class="plan-id"><span>反转预案</span><b>L1 · 做多</b></td>
-          <td class="thesis-cell">扫低后的短多反抽，不做趋势多。</td>
-          <td>4000.00</td>
-          <td class="risk-text">3992.00</td>
-          <td>4015.00</td>
-          <td>4025.00</td>
+          <td class="thesis-cell">扫低短多：4048/4050 附近只做反抽，不做趋势多。</td>
+          <td>4052.00</td>
+          <td class="risk-text">4040.00</td>
+          <td>4065.00</td>
+          <td>4074.00</td>
           <td class="rule-cell">
             <details>
               <summary>确认/取消</summary>
-              <p><b>确认：</b>先扫破 3995/4000 后，M5 重新收回 4000 上方，且美元/美债没有同步拉升。</p>
-              <p><b>取消：</b>跌破 3992 或反抽无法重新站上 4000。</p>
-              <p><b>依据：</b>4000 是整数关口和第一支撑，只有先扫破 3995/4000 后重新收回才做短多；止损放 3992 下方扫低失败位；TP1 看 4015，TP2 看 4025 反抽上沿。</p>
+              <p><b>确认：</b>先扫破 4048/4050 后，M5 重新收回 4052 上方，且美元/美债没有同步拉升。</p>
+              <p><b>取消：</b>跌破 4040 或反抽无法重新站上 4052。</p>
+              <p><b>依据：</b>4048 是日内第一支撑，4052 是扫低收回后的确认位；止损放 4040 下方，代表扫低失败；TP1 看 4065 VWAP/均衡区，TP2 看 4074 M5 压力。</p>
             </details>
           </td>
         </tr>
@@ -351,7 +351,12 @@
 <tr><td>2026-06-26</td><td>S2</td><td>空</td><td>4028.0</td><td>4042.0</td><td>4005.0</td><td>3995.0</td><td>盈利</td><td>2.0</td></tr>
 <tr><td>2026-06-26</td><td>B1</td><td>多</td><td>4032.0</td><td>4020.0</td><td>4038.0</td><td>4050.0</td><td>亏损</td><td>-1</td></tr>
 <tr><td>2026-06-26</td><td>B2</td><td>空</td><td>3995.0</td><td>4004.0</td><td>3988.0</td><td>3975.0</td><td>盈利</td><td>0.389</td></tr>
-<tr><td>2026-06-26</td><td>L1</td><td>多</td><td>4000.0</td><td>3992.0</td><td>4015.0</td><td>4025.0</td><td>亏损</td><td>-1</td></tr></tbody></table></div>
+<tr><td>2026-06-26</td><td>L1</td><td>多</td><td>4000.0</td><td>3992.0</td><td>4015.0</td><td>4025.0</td><td>亏损</td><td>-1</td></tr>
+<tr><td>2026-06-29</td><td>S1</td><td>空</td><td>4074.0</td><td>4098.0</td><td>4056.0</td><td>4048.0</td><td>待复盘</td><td></td></tr>
+<tr><td>2026-06-29</td><td>S2</td><td>空</td><td>4096.0</td><td>4110.0</td><td>4074.0</td><td>4056.0</td><td>待复盘</td><td></td></tr>
+<tr><td>2026-06-29</td><td>B1</td><td>多</td><td>4100.0</td><td>4088.0</td><td>4118.0</td><td>4138.0</td><td>待复盘</td><td></td></tr>
+<tr><td>2026-06-29</td><td>B2</td><td>空</td><td>4048.0</td><td>4058.0</td><td>4034.0</td><td>4000.0</td><td>待复盘</td><td></td></tr>
+<tr><td>2026-06-29</td><td>L1</td><td>多</td><td>4052.0</td><td>4040.0</td><td>4065.0</td><td>4074.0</td><td>待复盘</td><td></td></tr></tbody></table></div>
           </section>
         </section>
       </div>
@@ -361,30 +366,23 @@
           <div class="label">关键数据 / 事件</div>
           <ul class="key-events">
             <li>
-              <div class="event-row"><time>20:30</time><b>美国核心 PCE / PCE 物价指数</b><span>高</span></div>
-              <p>实际 待公布或以实时源为准 / 预期 市场预期附近</p>
-              <em>若通胀高于预期，通常利多美元和美债收益率、压制黄金；低于预期则利多黄金反弹。</em>
-            </li>
-            
-
-            <li>
-              <div class="event-row"><time>20:30</time><b>美国个人收入 / 个人支出</b><span>中</span></div>
-              <p>实际 待公布或以实时源为准 / 预期 市场预期附近</p>
-              <em>消费强会强化高利率预期，偏压制黄金；消费弱则支持黄金。</em>
-            </li>
-            
-
-            <li>
-              <div class="event-row"><time>20:30</time><b>美国初请失业金人数 / 耐用品订单</b><span>中</span></div>
-              <p>实际 待公布或以实时源为准 / 预期 市场预期附近</p>
-              <em>就业和订单强于预期偏利空黄金；弱于预期偏利多黄金。</em>
-            </li>
-            
-
-            <li>
               <div class="event-row"><time>全天</time><b>美元指数 DXY / 美国10年期收益率</b><span>高</span></div>
               <p>实际 盘中实时跟踪 / 预期 无固定预期</p>
-              <em>DXY 和 10Y 同步上行时不追多黄金；同步下行时谨慎追空黄金。</em>
+              <em>DXY 和 10Y 同步上行时压制黄金反弹；同步下行时不追空。</em>
+            </li>
+            
+
+            <li>
+              <div class="event-row"><time>今日</time><b>美国重要经济数据</b><span>低</span></div>
+              <p>实际 暂无高影响数据 / 预期 本周重点集中在 JOLTS、ADP、ISM、非农等后续数据</p>
+              <em>今日数据风险较低，但本周就业数据前市场可能提前调整美元和美债定价。</em>
+            </li>
+            
+
+            <li>
+              <div class="event-row"><time>本周</time><b>美国就业数据周</b><span>高</span></div>
+              <p>实际 待公布 / 预期 以实时经济日历为准</p>
+              <em>非农、JOLTS、ADP 若强于预期，偏利空黄金；弱于预期偏利多黄金。</em>
             </li>
             </ul>
         </section>
@@ -393,50 +391,50 @@
           <ul class="levels">
             <li class="压力">
               <span>压力</span>
-              <b>4051.00</b>
-              <p>上破目标</p>
+              <b>4096.00</b>
+              <p>前日高点 / 上破确认</p>
             </li>
             
             <li class="压力">
               <span>压力</span>
-              <b>4035.00</b>
-              <p>核心压力带</p>
+              <b>4088.00</b>
+              <p>M15 反弹压力</p>
+            </li>
+            
+            <li class="压力">
+              <span>压力</span>
+              <b>4074.00</b>
+              <p>M5 近端压力</p>
             </li>
             
             <li class="分界">
               <span>分界</span>
-              <b>4028.00</b>
-              <p>日内弱势分界</p>
+              <b>4064.50</b>
+              <p>VWAP/均衡分界</p>
+            </li>
+            
+            <li class="支撑">
+              <span>支撑</span>
+              <b>4048.00</b>
+              <p>日内第一支撑</p>
+            </li>
+            
+            <li class="支撑">
+              <span>支撑</span>
+              <b>4034.00</b>
+              <p>H4 VWAP 支撑</p>
             </li>
             
             <li class="支撑">
               <span>支撑</span>
               <b>4000.00</b>
-              <p>第一支撑</p>
-            </li>
-            
-            <li class="支撑">
-              <span>支撑</span>
-              <b>3995.00</b>
-              <p>下破触发区</p>
-            </li>
-            
-            <li class="支撑">
-              <span>支撑</span>
-              <b>3988.00</b>
-              <p>下方目标</p>
-            </li>
-            
-            <li class="支撑">
-              <span>支撑</span>
-              <b>3975.00</b>
-              <p>扩展下方目标</p>
+              <p>整数关口</p>
             </li>
             </ul>
         </section>
         <section class="panel">
           <div class="label">禁止交易窗口</div>
-          <ul class="windows"><li><time>重要数据公布前后至少 15 分钟</time><p>PCE、个人收入/支出、初请、耐用品订单等数据会放大黄金短线假突破。</p></li>
+          <ul class="windows"><li><time>重大突发消息公布前后至少 15 分钟</time><p>虽然今日常规数据风险较低，但美元、美债或地缘突发会放大黄金短线假突破。</p></li>
 <li><time>次日 04:30 之后</time><p>停止新开仓；04:50 前强制离场，避免 Bybit MT5 隔夜费用。</p></li></ul>
         </section>
       </aside>
@@ -444,7 +442,7 @@
 
     <section class="section panel">
       <div class="section-head"><div><h3>信息来源</h3><p>用于核对数据日和突发事件。</p></div></div>
-      <div class="sources"><a href='https://tradingeconomics.com/commodity/gold' target='_blank' rel='noreferrer'>Trading Economics Gold</a><a href='https://www.investing.com/commodities/gold' target='_blank' rel='noreferrer'>Investing.com Gold Futures</a><a href='https://www.forexfactory.com/calendar?day=jun26.2026' target='_blank' rel='noreferrer'>Forex Factory Calendar Jun 26 2026</a></div>
+      <div class="sources"><a href='https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar' target='_blank' rel='noreferrer'>Kiplinger Economic Calendar Jun 29-Jul 3 2026</a><a href='https://tradingeconomics.com/commodity/gold' target='_blank' rel='noreferrer'>Trading Economics Gold</a><a href='https://www.investing.com/commodities/gold' target='_blank' rel='noreferrer'>Investing.com Gold Futures</a></div>
     </section>
   </div>
 </main>
