@@ -55,7 +55,7 @@
     .pill.good { color:#99f2c5; background:rgba(24,195,126,.12); border-color:rgba(24,195,126,.28); }
     .pill.warn { color:#ffe09a; background:rgba(243,201,105,.12); border-color:rgba(243,201,105,.30); }
     .pill.danger { color:#ffb8c0; background:rgba(255,91,106,.12); border-color:rgba(255,91,106,.30); }
-    .decision-board { display:grid; grid-template-columns:280px minmax(0,1fr) 330px; gap:10px; align-items:start; }
+    .decision-board { display:grid; grid-template-columns:260px minmax(0,1fr) 300px; gap:10px; align-items:start; min-width:0; }
     .left-stack { display:grid; gap:10px; min-width:0; align-content:start; }
     .center-stack { display:grid; gap:10px; min-width:0; align-content:start; }
     .panel,.hero-card,.scenario {
@@ -98,10 +98,10 @@
     .card-kicker { display:flex; justify-content:space-between; gap:10px; align-items:center; margin-bottom:10px; }
     .card-kicker span { color:var(--gold); font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
     .card-kicker strong { min-height:34px; display:inline-flex; align-items:center; padding:6px 10px; border-radius:12px; background:rgba(113,50,245,.16); color:#d8c8ff; }
-    .hero-card h2 { margin:0 0 12px; font-size:26px; line-height:1.16; letter-spacing:-.045em; text-wrap:balance; }
-    .execution-grid { display:grid; grid-template-columns:1.15fr repeat(4,minmax(0,1fr)); gap:7px; }
-    .metric { border:1px solid var(--line); border-radius:12px; padding:9px; background:rgba(8,7,13,.72); min-height:72px; min-width:0; }
-    .metric strong { display:block; margin-top:6px; font-size:21px; letter-spacing:-.03em; overflow-wrap:anywhere; }
+    .hero-card h2 { margin:0 0 12px; font-size:24px; line-height:1.18; letter-spacing:-.04em; text-wrap:balance; overflow-wrap:anywhere; }
+    .execution-grid { display:grid; grid-template-columns:1.2fr repeat(4,minmax(0,1fr)); gap:7px; }
+    .metric { border:1px solid var(--line); border-radius:12px; padding:9px; background:rgba(8,7,13,.72); min-height:68px; min-width:0; }
+    .metric strong { display:block; margin-top:6px; font-size:19px; letter-spacing:-.03em; overflow-wrap:anywhere; }
     .metric em { display:block; margin-top:4px; color:var(--gold); font-size:12px; font-style:normal; }
     .metric.focus { border-color:rgba(113,50,245,.70); background:rgba(113,50,245,.14); }
     .metric.risk strong { color:#ffb8c0; }
@@ -110,15 +110,15 @@
     .rule-grid .basis-card { grid-column:1 / -1; background:rgba(243,201,105,.07); border-color:rgba(243,201,105,.24); }
     .rule-grid span { color:var(--gold); font-size:12px; font-weight:700; }
     .rule-grid p { margin:5px 0 0; color:#ded9eb; font-size:12px; line-height:1.38; }
-    .right-stack { display:grid; gap:10px; }
+    .right-stack { display:grid; gap:10px; min-width:0; }
     .key-events,.levels,.windows { list-style:none; margin:8px 0 0; padding:0; display:grid; gap:7px; }
     .key-events li,.levels li,.windows li { border:1px solid var(--line); border-radius:12px; padding:9px; background:rgba(8,7,13,.62); min-width:0; }
-    .event-row { display:grid; grid-template-columns:auto 1fr auto; gap:8px; align-items:center; }
+    .event-row { display:grid; grid-template-columns:auto minmax(0,1fr) auto; gap:8px; align-items:center; }
     time { color:var(--gold); font-size:12px; font-weight:700; white-space:nowrap; }
-    .event-row b { font-size:13px; }
+    .event-row b { font-size:13px; min-width:0; overflow-wrap:anywhere; line-height:1.28; }
     .event-row span { color:#ffdc8a; font-size:12px; }
-    .key-events p,.windows p { margin:5px 0 0; color:#d4cede; font-size:12px; line-height:1.35; }
-    .key-events em { display:block; margin-top:5px; color:var(--muted); font-size:12px; font-style:normal; line-height:1.4; }
+    .key-events p,.windows p { margin:5px 0 0; color:#d4cede; font-size:12px; line-height:1.35; overflow-wrap:anywhere; }
+    .key-events em { display:block; margin-top:5px; color:var(--muted); font-size:12px; font-style:normal; line-height:1.4; overflow-wrap:anywhere; }
     .levels li { display:grid; grid-template-columns:44px 78px 1fr; gap:7px; align-items:center; }
     .levels span { color:var(--muted); font-size:12px; }
     .levels b { font-size:18px; }
@@ -148,9 +148,9 @@
     summary { min-height:26px; display:flex; align-items:center; cursor:pointer; color:#d8c8ff; }
     details p { margin:5px 0 0; line-height:1.35; }
     details:not([open]) p { display:none; }
-    .center-tables { display:grid; grid-template-columns:.9fr 1.1fr; gap:10px; }
+    .center-tables { display:grid; grid-template-columns:1fr; gap:10px; }
     .tables { display:grid; grid-template-columns:1fr 1.35fr; gap:10px; }
-    .table-wrap { max-height:300px; overflow:auto; border:1px solid var(--line); border-radius:14px; }
+    .table-wrap { max-height:260px; overflow:auto; border:1px solid var(--line); border-radius:14px; }
     table { width:100%; border-collapse:collapse; font-size:13px; }
     th,td { padding:10px; border-bottom:1px solid rgba(148,151,169,.14); text-align:left; vertical-align:top; }
     th { position:sticky; top:0; z-index:1; background:#1c1a2b; color:#f1edff; }
@@ -158,13 +158,13 @@
     .sources { display:flex; flex-wrap:wrap; gap:8px; }
     .sources a { min-height:40px; display:inline-flex; align-items:center; padding:8px 10px; border-radius:12px; border:1px solid var(--line); color:#d8c8ff; text-decoration:none; background:rgba(113,50,245,.10); }
     .empty { color:var(--muted); }
-    @media (max-width:1180px) {
+    @media (max-width:1450px) {
       .decision-board,.tables { grid-template-columns:1fr; }
       .decision-card,.hero-card { min-height:auto; }
-      .right-stack { grid-template-columns:1fr 1fr; }
+      .right-stack { grid-template-columns:1.1fr .9fr; }
       .right-stack .panel:first-child { grid-column:1 / -1; }
       .center-stack { gap:12px; }
-      .execution-grid { grid-template-columns:repeat(2,1fr); }
+      .execution-grid { grid-template-columns:repeat(3,1fr); }
       .metric.xl { grid-column:1 / -1; }
       .center-tables { grid-template-columns:1fr; }
       .strategy-table { min-width:720px; }
@@ -196,7 +196,7 @@
         <p class="subtitle">主计划优先，突破/破位/反转预案齐备；盘后统计；硬规则：不隔夜。</p>
       </div>
       <div class="status-pills" aria-label="今日状态">
-        <span class="pill">刷新 2026-07-02 09:51</span>
+        <span class="pill">刷新 2026-07-02 10:03</span>
         <span class="pill">交易日 2026-07-02</span>
         <span class="pill danger">事件 高</span>
       </div>
