@@ -71,7 +71,7 @@
     .bias-title strong { font-size:40px; line-height:1; letter-spacing:-.06em; }
     .score-ring {
       width:74px; height:74px; border-radius:50%; display:grid; place-items:center;
-      border:1px solid var(--line-strong); background:conic-gradient(var(--purple) 72%, rgba(255,255,255,.06) 0);
+      border:1px solid var(--line-strong); background:conic-gradient(var(--purple) 58%, rgba(255,255,255,.06) 0);
       position:relative; flex:0 0 auto;
     }
     .score-ring::after { content:""; position:absolute; inset:7px; border-radius:50%; background:#11101a; }
@@ -196,9 +196,9 @@
         <p class="subtitle">主计划优先，突破/破位/反转预案齐备；盘后统计；硬规则：不隔夜。</p>
       </div>
       <div class="status-pills" aria-label="今日状态">
-        <span class="pill">刷新 2026-07-02 09:48</span>
+        <span class="pill">刷新 2026-07-02 09:51</span>
         <span class="pill">交易日 2026-07-02</span>
-        <span class="pill neutral">事件 ?</span>
+        <span class="pill danger">事件 高</span>
       </div>
     </header>
 
@@ -210,8 +210,8 @@
             <div class="bias-title">
               <strong>偏多</strong>
               <div>
-                <div class="score-ring warn"><b>72</b></div>
-                <p class="score-caption">谨慎执行</p>
+                <div class="score-ring danger"><b>58</b></div>
+                <p class="score-caption">观望优先</p>
               </div>
             </div>
           </div>
@@ -221,7 +221,7 @@
             <div><span>计划数</span><b>3</b></div>
             <div><span>停止开仓</span><b>04:30</b></div>
           </div>
-          <p class="summary">本地规则版：偏多，信心中。事件模块暂未接 OpenAI，所有数据发布前后按中等事件风险降级处理。 ?? 20:30 ?????????????????????20:15-20:50 ??????</p>
+          <p class="summary">本地规则版：偏多，信心中。事件模块暂未接 OpenAI，所有数据发布前后按中等事件风险降级处理。 ?? 20:30 ?????????????????????20:15-20:50 ?????? 今日 20:30 北京时间美国非农就业报告为一票否决级事件，20:15-20:50 禁止新开仓。</p>
         </aside>
 
         <section class="panel" aria-label="今日执行纪律">
@@ -344,16 +344,16 @@
           <div class="label">关键数据 / 事件</div>
           <ul class="key-events">
             <li>
-              <div class="event-row"><time>20:30</time><b>?? Employment Situation / ?????????????</b><span>?</span></div>
-              <p>实际 ??? / 预期 ??????????</p>
-              <em>???/????????????????????????????????????????????</em>
+              <div class="event-row"><time>20:30</time><b>美国 Employment Situation / 非农就业、失业率、平均时薪</b><span>高</span></div>
+              <p>实际 待公布 / 预期 以公布前市场预期为准</p>
+              <em>若就业/薪资强于预期，通常利多美元和美债收益率、压制黄金；弱于预期则利多黄金。数据前后禁止追单。</em>
             </li>
             
 
             <li>
-              <div class="event-row"><time>20:30</time><b>???????????</b><span>?</span></div>
-              <p>实际 ??? / 预期 ??????</p>
-              <em>???????????????????????????</em>
+              <div class="event-row"><time>20:30</time><b>美国每周初请失业金人数</b><span>中</span></div>
+              <p>实际 待公布 / 预期 待公布前核对</p>
+              <em>与非农同一时段公布，若就业数据方向一致会放大黄金波动。</em>
             </li>
             </ul>
         </section>
@@ -381,16 +381,16 @@
         </section>
         <section class="panel">
           <div class="label">禁止交易窗口</div>
-          <ul class="windows"><li><time>20:15-20:50</time><p>????????/???/??????????????????????</p></li>
-<li><time>?????15??</time><p>???????????????????????</p></li>
-<li><time>04:30??</time><p>????????????????????</p></li></ul>
+          <ul class="windows"><li><time>20:15-20:50</time><p>美国非农就业报告/失业率/薪资集中公布，点差和滑点风险高，禁止新开仓。</p></li>
+<li><time>重要数据后15分钟</time><p>等待第一波扫损和方向确认，不用技术触发价追单。</p></li>
+<li><time>04:30之后</time><p>停止新开仓，避免隔夜持仓费和流动性风险。</p></li></ul>
         </section>
       </aside>
     </section>
 
     <section class="section panel">
       <div class="section-head"><div><h3>信息来源</h3><p>用于核对数据日和突发事件。</p></div></div>
-      <div class="sources"><a href='https://www.bls.gov/schedule/2026/07_sched.htm' target='_blank' rel='noreferrer'>BLS July 2026 Release Calendar</a><a href='local://bybit-mt5' target='_blank' rel='noreferrer'>Bybit MT5 ??????</a><a href='local://manual-event-check' target='_blank' rel='noreferrer'>OpenAI API ?????????????????</a></div>
+      <div class="sources"><a href='https://www.bls.gov/schedule/2026/07_sched.htm' target='_blank' rel='noreferrer'>BLS July 2026 Release Calendar</a><a href='local://bybit-mt5' target='_blank' rel='noreferrer'>Bybit MT5 本地行情快照</a><a href='local://manual-event-check' target='_blank' rel='noreferrer'>OpenAI API 未启用，事件由官方日历人工核对写入</a></div>
     </section>
   </div>
 </main>
