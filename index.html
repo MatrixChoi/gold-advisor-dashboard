@@ -71,7 +71,7 @@
     .bias-title strong { font-size:40px; line-height:1; letter-spacing:-.06em; }
     .score-ring {
       width:74px; height:74px; border-radius:50%; display:grid; place-items:center;
-      border:1px solid var(--line-strong); background:conic-gradient(var(--purple) 65%, rgba(255,255,255,.06) 0);
+      border:1px solid var(--line-strong); background:conic-gradient(var(--purple) 72%, rgba(255,255,255,.06) 0);
       position:relative; flex:0 0 auto;
     }
     .score-ring::after { content:""; position:absolute; inset:7px; border-radius:50%; background:#11101a; }
@@ -196,9 +196,9 @@
         <p class="subtitle">主计划优先，突破/破位/反转预案齐备；盘后统计；硬规则：不隔夜。</p>
       </div>
       <div class="status-pills" aria-label="今日状态">
-        <span class="pill">刷新 2026-07-02 04:55</span>
-        <span class="pill">交易日 2026-07-01</span>
-        <span class="pill warn">事件 中</span>
+        <span class="pill">刷新 2026-07-02 09:48</span>
+        <span class="pill">交易日 2026-07-02</span>
+        <span class="pill neutral">事件 ?</span>
       </div>
     </header>
 
@@ -208,20 +208,20 @@
           <div>
             <div class="label">今日方向</div>
             <div class="bias-title">
-              <strong>偏空</strong>
+              <strong>偏多</strong>
               <div>
-                <div class="score-ring warn"><b>65</b></div>
+                <div class="score-ring warn"><b>72</b></div>
                 <p class="score-caption">谨慎执行</p>
               </div>
             </div>
           </div>
           <div class="quick-grid">
-            <div><span>参考价</span><b>3980.14</b></div>
+            <div><span>参考价</span><b>4053.35</b></div>
             <div><span>信心</span><b>中</b></div>
             <div><span>计划数</span><b>3</b></div>
             <div><span>停止开仓</span><b>04:30</b></div>
           </div>
-          <p class="summary">本地规则版：偏空，信心中。事件模块暂未接 OpenAI，所有数据发布前后按中等事件风险降级处理。</p>
+          <p class="summary">本地规则版：偏多，信心中。事件模块暂未接 OpenAI，所有数据发布前后按中等事件风险降级处理。 ?? 20:30 ?????????????????????20:15-20:50 ??????</p>
         </aside>
 
         <section class="panel" aria-label="今日执行纪律">
@@ -237,23 +237,23 @@
 
       <div class="center-stack">
         
-        <section class="hero-card short" aria-label="主交易计划">
+        <section class="hero-card long" aria-label="主交易计划">
           <div class="card-kicker">
             <span>主交易计划 / P1</span>
-            <strong>S1 · 做空</strong>
+            <strong>B1 · 做多</strong>
           </div>
-          <h2>结构偏弱或震荡偏弱，等待反弹失败后跌回触发价，不追低。</h2>
+          <h2>均线/VWAP 上方偏多，等待回踩后重新站上触发价，不追高。</h2>
           <div class="execution-grid">
-            <div class="metric xl"><span>入场区</span><strong>3977.14-3983.74</strong></div>
-            <div class="metric focus"><span>触发价</span><strong>3977.14</strong></div>
-            <div class="metric risk"><span>止损</span><strong>3986.74</strong></div>
-            <div class="metric"><span>TP1</span><strong>3968.14</strong><em>0.94R</em></div>
-            <div class="metric"><span>TP2</span><strong>3960.94</strong><em>1.69R</em></div>
+            <div class="metric xl"><span>入场区</span><strong>4049.11-4056.88</strong></div>
+            <div class="metric focus"><span>触发价</span><strong>4056.88</strong></div>
+            <div class="metric risk"><span>止损</span><strong>4045.57</strong></div>
+            <div class="metric"><span>TP1</span><strong>4067.49</strong><em>0.94R</em></div>
+            <div class="metric"><span>TP2</span><strong>4075.97</strong><em>1.69R</em></div>
           </div>
           <div class="rule-grid">
-            <article><span>确认条件</span><p>M5 反弹失败并重新跌回触发价下方。</p></article>
-            <article><span>取消条件</span><p>M5 有效站回止损区上方，或美元/美债同步下行导致黄金强反弹。</p></article>
-            <article class="basis-card"><span>点位计算依据</span><p>ATR 给止损和目标缓冲；触发价取 M15 VWAP/枢轴下方确认；止损放反弹区上沿外；TP 参考日内支撑和 ATR 扩展。</p></article>
+            <article><span>确认条件</span><p>M5 收回触发价上方，且回踩不跌破入场区下沿。</p></article>
+            <article><span>取消条件</span><p>M5 有效跌破入场区下沿，或数据/美债美元同步压制黄金。</p></article>
+            <article class="basis-card"><span>点位计算依据</span><p>ATR 给止损和目标缓冲；触发价取 M15 VWAP/枢轴上方确认；止损放回踩区下沿外；TP 参考日内阻力和 ATR 扩展。</p></article>
           </div>
         </section>
         
@@ -268,10 +268,10 @@
         <tr class="long">
           <td class="plan-id"><span>上破预案</span><b>B2 · 做多</b></td>
           <td class="thesis-cell">向上突破方案：只有放量站稳日内压力后才做突破多。</td>
-          <td>4069.10</td>
-          <td class="risk-text">4059.50</td>
-          <td>4078.10</td>
-          <td>4085.30</td>
+          <td>4119.16</td>
+          <td class="risk-text">4107.85</td>
+          <td>4129.77</td>
+          <td>4138.25</td>
           <td class="rule-cell">
             <details>
               <summary>确认/取消</summary>
@@ -286,10 +286,10 @@
         <tr class="short">
           <td class="plan-id"><span>下破预案</span><b>S2 · 做空</b></td>
           <td class="thesis-cell">向下破位方案：只有跌破日内支撑后才顺势做空。</td>
-          <td>3942.49</td>
-          <td class="risk-text">3952.09</td>
-          <td>3933.49</td>
-          <td>3926.29</td>
+          <td>3952.32</td>
+          <td class="risk-text">3963.63</td>
+          <td>3941.71</td>
+          <td>3933.23</td>
           <td class="rule-cell">
             <details>
               <summary>确认/取消</summary>
@@ -331,7 +331,10 @@
 <tr><td>2026-06-30</td><td>L1</td><td>多</td><td>3966.0</td><td>3938.0</td><td>3992.0</td><td>4004.0</td><td>盈利</td><td>1.143</td></tr>
 <tr><td>2026-07-01</td><td>S1</td><td>空</td><td>3977.14</td><td>3986.74</td><td>3968.14</td><td>3960.94</td><td>亏损</td><td>-1</td></tr>
 <tr><td>2026-07-01</td><td>B2</td><td>多</td><td>4069.1</td><td>4059.5</td><td>4078.1</td><td>4085.3</td><td>盈利</td><td>1.313</td></tr>
-<tr><td>2026-07-01</td><td>S2</td><td>空</td><td>3942.49</td><td>3952.09</td><td>3933.49</td><td>3926.29</td><td>未触发</td><td></td></tr></tbody></table></div>
+<tr><td>2026-07-01</td><td>S2</td><td>空</td><td>3942.49</td><td>3952.09</td><td>3933.49</td><td>3926.29</td><td>未触发</td><td></td></tr>
+<tr><td>2026-07-02</td><td>B1</td><td>多</td><td>4056.88</td><td>4045.57</td><td>4067.49</td><td>4075.97</td><td>待复盘</td><td></td></tr>
+<tr><td>2026-07-02</td><td>B2</td><td>多</td><td>4119.16</td><td>4107.85</td><td>4129.77</td><td>4138.25</td><td>待复盘</td><td></td></tr>
+<tr><td>2026-07-02</td><td>S2</td><td>空</td><td>3952.32</td><td>3963.63</td><td>3941.71</td><td>3933.23</td><td>待复盘</td><td></td></tr></tbody></table></div>
           </section>
         </section>
       </div>
@@ -341,9 +344,16 @@
           <div class="label">关键数据 / 事件</div>
           <ul class="key-events">
             <li>
-              <div class="event-row"><time>美盘前后</time><b>美国数据/美债收益率/美元指数需人工核对</b><span>中</span></div>
-              <p>实际 待公布 / 预期 待核对</p>
-              <em>API 未开通前不自动判读事件；数据前后减仓或暂停新开仓。</em>
+              <div class="event-row"><time>20:30</time><b>?? Employment Situation / ?????????????</b><span>?</span></div>
+              <p>实际 ??? / 预期 ??????????</p>
+              <em>???/????????????????????????????????????????????</em>
+            </li>
+            
+
+            <li>
+              <div class="event-row"><time>20:30</time><b>???????????</b><span>?</span></div>
+              <p>实际 ??? / 预期 ??????</p>
+              <em>???????????????????????????</em>
             </li>
             </ul>
         </section>
@@ -352,34 +362,35 @@
           <ul class="levels">
             <li class="压力">
               <span>压力</span>
-              <b>4066.10</b>
+              <b>4115.63</b>
               <p>上方压力</p>
             </li>
             
             <li class="分界">
               <span>分界</span>
-              <b>4004.44</b>
+              <b>4035.74</b>
               <p>日内枢轴</p>
             </li>
             
             <li class="支撑">
               <span>支撑</span>
-              <b>3945.49</b>
+              <b>3955.85</b>
               <p>下方支撑</p>
             </li>
             </ul>
         </section>
         <section class="panel">
           <div class="label">禁止交易窗口</div>
-          <ul class="windows"><li><time>重要数据前后至少15分钟</time><p>OpenAI 事件核对暂未启用，按保守规则避免数据波动误触发。</p></li>
-<li><time>04:30之后</time><p>停止新开仓，避免隔夜和流动性问题。</p></li></ul>
+          <ul class="windows"><li><time>20:15-20:50</time><p>????????/???/??????????????????????</p></li>
+<li><time>?????15??</time><p>???????????????????????</p></li>
+<li><time>04:30??</time><p>????????????????????</p></li></ul>
         </section>
       </aside>
     </section>
 
     <section class="section panel">
       <div class="section-head"><div><h3>信息来源</h3><p>用于核对数据日和突发事件。</p></div></div>
-      <div class="sources"><a href='local://bybit-mt5' target='_blank' rel='noreferrer'>Bybit MT5 本地行情快照</a><a href='local://offline-rule-advisor' target='_blank' rel='noreferrer'>OpenAI API 未启用，事件为保守占位</a></div>
+      <div class="sources"><a href='https://www.bls.gov/schedule/2026/07_sched.htm' target='_blank' rel='noreferrer'>BLS July 2026 Release Calendar</a><a href='local://bybit-mt5' target='_blank' rel='noreferrer'>Bybit MT5 ??????</a><a href='local://manual-event-check' target='_blank' rel='noreferrer'>OpenAI API ?????????????????</a></div>
     </section>
   </div>
 </main>
