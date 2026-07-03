@@ -55,6 +55,20 @@
     .pill.good { color:#99f2c5; background:rgba(24,195,126,.12); border-color:rgba(24,195,126,.28); }
     .pill.warn { color:#ffe09a; background:rgba(243,201,105,.12); border-color:rgba(243,201,105,.30); }
     .pill.danger { color:#ffb8c0; background:rgba(255,91,106,.12); border-color:rgba(255,91,106,.30); }
+    .session-strip {
+      display:grid; grid-template-columns:1.15fr 1.65fr .9fr 1.15fr .95fr; gap:8px;
+      padding:8px; border:1px solid var(--line); border-radius:18px;
+      background:linear-gradient(90deg,rgba(243,201,105,.10),rgba(113,50,245,.10),rgba(21,20,33,.72));
+      box-shadow:0 12px 38px rgba(0,0,0,.22);
+    }
+    .session-strip article {
+      border:1px solid rgba(255,255,255,.08); border-radius:13px; padding:9px 10px;
+      background:rgba(8,7,13,.55); min-width:0;
+    }
+    .session-strip article.good { border-color:rgba(24,195,126,.34); background:rgba(24,195,126,.10); }
+    .session-strip article.warn { border-color:rgba(243,201,105,.36); background:rgba(243,201,105,.10); }
+    .session-strip span { display:block; color:var(--muted); font-size:11px; letter-spacing:.08em; text-transform:uppercase; }
+    .session-strip strong { display:block; margin-top:5px; color:#f5f1ff; font-size:13px; line-height:1.32; overflow-wrap:anywhere; }
     .decision-board { display:grid; grid-template-columns:260px minmax(0,1fr) 300px; gap:10px; align-items:start; min-width:0; }
     .left-stack { display:grid; gap:10px; min-width:0; align-content:start; }
     .center-stack { display:grid; gap:10px; min-width:0; align-content:start; }
@@ -81,6 +95,19 @@
     .quick-grid div { border:1px solid var(--line); border-radius:12px; padding:9px; background:rgba(255,255,255,.035); min-height:58px; }
     .quick-grid span,.metric span { display:block; color:var(--muted); font-size:12px; }
     .quick-grid b { display:block; margin-top:6px; font-size:18px; }
+    .review-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
+    .review-card { border:1px solid var(--line); border-radius:16px; padding:13px; background:linear-gradient(180deg,rgba(28,26,43,.92),rgba(8,7,13,.72)); min-width:0; box-shadow:0 10px 34px rgba(0,0,0,.20); }
+    .review-card span,.latest-review-grid span { display:block; color:var(--muted); font-size:12px; }
+    .review-card strong { display:block; margin-top:5px; font-size:25px; letter-spacing:-.04em; line-height:1; }
+    .review-card em { display:block; margin-top:5px; color:#cfc8e2; font-size:12px; font-style:normal; }
+    .review-card.good strong,.review-latest.good b { color:var(--green); }
+    .review-card.danger strong,.review-latest.danger b { color:var(--red); }
+    .review-latest { border-left:4px solid var(--line-strong); }
+    .review-latest.good { border-left-color:var(--green); }
+    .review-latest.danger { border-left-color:var(--red); }
+    .latest-review-grid { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:8px; }
+    .latest-review-grid div { border:1px solid var(--line); border-radius:12px; padding:9px; background:rgba(8,7,13,.62); min-width:0; }
+    .latest-review-grid b { display:block; margin-top:5px; font-size:17px; overflow-wrap:anywhere; }
     .summary { margin:0; color:#d5d0e3; font-size:13px; line-height:1.55; }
     .discipline-list { list-style:none; margin:9px 0 0; padding:0; display:grid; gap:7px; }
     .discipline-list li {
@@ -148,7 +175,8 @@
     summary { min-height:26px; display:flex; align-items:center; cursor:pointer; color:#d8c8ff; }
     details p { margin:5px 0 0; line-height:1.35; }
     details:not([open]) p { display:none; }
-    .center-tables { display:grid; grid-template-columns:1fr; gap:10px; }
+    .center-tables { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .center-tables .review-latest,.center-tables .panel:last-child { grid-column:1 / -1; }
     .tables { display:grid; grid-template-columns:1fr 1.35fr; gap:10px; }
     .table-wrap { max-height:260px; overflow:auto; border:1px solid var(--line); border-radius:14px; }
     table { width:100%; border-collapse:collapse; font-size:13px; }
@@ -164,6 +192,8 @@
       .right-stack { grid-template-columns:1.1fr .9fr; }
       .right-stack .panel:first-child { grid-column:1 / -1; }
       .center-stack { gap:12px; }
+      .review-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .latest-review-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
       .execution-grid { grid-template-columns:repeat(3,1fr); }
       .metric.xl { grid-column:1 / -1; }
       .center-tables { grid-template-columns:1fr; }
@@ -173,11 +203,12 @@
       main { padding:10px; }
       .topbar { grid-template-columns:1fr; border-radius:18px; }
       .status-pills { justify-content:flex-start; }
+      .session-strip { grid-template-columns:1fr; }
       h1 { font-size:22px; }
       .decision-card,.panel,.hero-card,.scenario { border-radius:16px; }
       .bias-title strong { font-size:38px; }
       .hero-card h2 { font-size:23px; }
-      .execution-grid,.rule-grid,.quick-grid,.right-stack { grid-template-columns:1fr; }
+      .execution-grid,.rule-grid,.quick-grid,.right-stack,.review-grid,.latest-review-grid { grid-template-columns:1fr; }
       .metric { min-height:auto; }
       .event-row { grid-template-columns:1fr; }
       .levels li { grid-template-columns:48px 82px 1fr; }
@@ -196,11 +227,36 @@
         <p class="subtitle">主计划优先，突破/破位/反转预案齐备；盘后统计；硬规则：不隔夜。</p>
       </div>
       <div class="status-pills" aria-label="今日状态">
-        <span class="pill">刷新 2026-07-03 12:26</span>
+        <span class="pill">刷新 2026-07-03 16:36</span>
         <span class="pill">交易日 2026-07-03</span>
         <span class="pill danger">事件 高</span>
       </div>
     </header>
+
+    
+    <section class="session-strip" aria-label="自动盘段更新状态">
+      <article class="warn">
+        <span>自动盘段</span>
+        <strong>当前仍是 亚盘初始，欧盘更新 尚未生成/未加载</strong>
+      </article>
+      <article>
+        <span>当前生效</span>
+        <strong>亚盘初始 · 2026-07-03 亚盘初始</strong>
+      </article>
+      <article>
+        <span>下次计划</span>
+        <strong>20:00 美盘更新</strong>
+      </article>
+      <article>
+        <span>SET / EA</span>
+        <strong>SET 写入同版本；EA 读取后自动执行</strong>
+      </article>
+      <article>
+        <span>最近生成</span>
+        <strong>2026-07-03T12:26:42.021519+08:00</strong>
+      </article>
+    </section>
+    
 
     <section class="decision-board">
       <div class="left-stack">
@@ -240,7 +296,7 @@
         <section class="hero-card long" aria-label="主交易计划">
           <div class="card-kicker">
             <span>主交易计划 / P1</span>
-            <strong>B1 · 做多</strong>
+            <strong>B1 · 做多 · 亚盘初始</strong>
           </div>
           <h2>均线/VWAP 上方偏多，等待回踩后重新站上触发价，不追高。</h2>
           <div class="execution-grid">
@@ -257,6 +313,30 @@
           </div>
         </section>
         
+        
+    <section class="review-grid" aria-label="复盘统计总览">
+      <article class="review-card">
+        <span>累计复盘</span>
+        <strong>5 天</strong>
+        <em>17 笔触发</em>
+      </article>
+      <article class="review-card">
+        <span>累计胜率</span>
+        <strong>58.82%</strong>
+        <em>10 赢 / 7 亏</em>
+      </article>
+      <article class="review-card good">
+        <span>累计 R</span>
+        <strong>2.59R</strong>
+        <em>不含未触发计划</em>
+      </article>
+      <article class="review-card">
+        <span>近 5 日</span>
+        <strong>58.82%</strong>
+        <em>2.59R / 17 笔</em>
+      </article>
+    </section>
+    
         <section class="scenario-section" aria-label="备用执行预案">
           <div class="section-head">
             <div><h3>备用执行预案</h3><p>上破、下破、扫低反转都必须有明确触发价；未触发不做。</p></div>
@@ -305,6 +385,21 @@
         </section>
 
         <section class="center-tables">
+          
+    <section class="panel review-latest danger">
+      <div class="section-head">
+        <div><h3>最近一日复盘</h3><p>判断方向、点位和执行结果是否有效。</p></div>
+      </div>
+      <div class="latest-review-grid">
+        <div><span>日期</span><b>2026-07-02</b></div>
+        <div><span>方向</span><b>偏多</b></div>
+        <div><span>触发/计划</span><b>2/3</b></div>
+        <div><span>胜负</span><b>0 / 2</b></div>
+        <div><span>结果</span><b>亏损</b></div>
+        <div><span>合计</span><b>-2.00R</b></div>
+      </div>
+    </section>
+    
           <section class="panel">
             <div class="section-head"><div><h3>每日统计</h3><p>按固定点位复盘，保守记录胜率。</p></div></div>
             <div class="table-wrap"><table><thead><tr><th>日期</th><th>方向</th><th>事件</th><th>触发</th><th>赢</th><th>亏</th><th>胜率</th><th>R</th></tr></thead><tbody><tr><td>2026-06-26</td><td>偏空</td><td>中</td><td>5/5</td><td>3</td><td>2</td><td>60.0%</td><td>1.289R</td></tr>
@@ -312,6 +407,14 @@
 <tr><td>2026-06-30</td><td>偏空</td><td>高</td><td>5/5</td><td>4</td><td>1</td><td>80.0%</td><td>3.074R</td></tr>
 <tr><td>2026-07-01</td><td>偏空</td><td>中</td><td>2/3</td><td>1</td><td>1</td><td>50.0%</td><td>0.313R</td></tr>
 <tr><td>2026-07-02</td><td>偏多</td><td>高</td><td>2/3</td><td>0</td><td>2</td><td>0.0%</td><td>-2.0R</td></tr></tbody></table></div>
+          </section>
+          <section class="panel">
+            <div class="section-head"><div><h3>计划表现</h3><p>按计划 ID 统计，判断哪类预案更有效。</p></div></div>
+            <div class="table-wrap"><table><thead><tr><th>ID</th><th>触发</th><th>赢</th><th>亏</th><th>胜率</th><th>R</th></tr></thead><tbody><tr><td>S2</td><td>2</td><td>2</td><td>0</td><td>100.00%</td><td>3.67R</td></tr>
+<tr><td>S1</td><td>4</td><td>3</td><td>1</td><td>75.00%</td><td>1.09R</td></tr>
+<tr><td>L1</td><td>3</td><td>2</td><td>1</td><td>66.67%</td><td>0.69R</td></tr>
+<tr><td>B2</td><td>5</td><td>3</td><td>2</td><td>60.00%</td><td>0.15R</td></tr>
+<tr><td>B1</td><td>3</td><td>0</td><td>3</td><td>0.00%</td><td>-3.00R</td></tr></tbody></table></div>
           </section>
           <section class="panel">
             <div class="section-head"><div><h3>计划流水</h3><p>每条计划的触发、止损和结果。</p></div></div>
