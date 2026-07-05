@@ -85,7 +85,7 @@
     .bias-title strong { font-size:40px; line-height:1; letter-spacing:-.06em; }
     .score-ring {
       width:74px; height:74px; border-radius:50%; display:grid; place-items:center;
-      border:1px solid var(--line-strong); background:conic-gradient(var(--purple) 44%, rgba(255,255,255,.06) 0);
+      border:1px solid var(--line-strong); background:conic-gradient(var(--purple) 65%, rgba(255,255,255,.06) 0);
       position:relative; flex:0 0 auto;
     }
     .score-ring::after { content:""; position:absolute; inset:7px; border-radius:50%; background:#11101a; }
@@ -224,12 +224,12 @@
     <header class="topbar">
       <div>
         <h1>Gold Advisor · XAUUSD 日内决策台</h1>
-        <p class="subtitle">主计划优先，突破/破位/反转预案齐备；盘后统计；硬规则：不隔夜。</p>
+        <p class="subtitle">主计划优先，突破/破位/反转预案齐备；盘后统计；硬规则：停开仓 + 48根H1持仓上限。</p>
       </div>
       <div class="status-pills" aria-label="今日状态">
-        <span class="pill">刷新 2026-07-03 20:00</span>
-        <span class="pill">交易日 2026-07-03</span>
-        <span class="pill danger">事件 高</span>
+        <span class="pill">刷新 2026-07-06 06:05</span>
+        <span class="pill">交易日 2026-07-06</span>
+        <span class="pill warn">事件 中</span>
       </div>
     </header>
 
@@ -241,11 +241,11 @@
       </article>
       <article>
         <span>当前生效</span>
-        <strong>美盘更新 · 2026-07-03 美盘更新 20:00</strong>
+        <strong>亚盘初始 · 2026-07-06 亚盘初始 06:05</strong>
       </article>
       <article>
         <span>下次计划</span>
-        <strong>次交易日 06:05 亚盘初始</strong>
+        <strong>14:30 欧盘更新</strong>
       </article>
       <article>
         <span>SET / EA</span>
@@ -253,7 +253,7 @@
       </article>
       <article>
         <span>最近生成</span>
-        <strong>2026-07-03T20:00+08:00</strong>
+        <strong>2026-07-06T06:05+08:00</strong>
       </article>
     </section>
     
@@ -266,18 +266,18 @@
             <div class="bias-title">
               <strong>偏多</strong>
               <div>
-                <div class="score-ring danger"><b>44</b></div>
-                <p class="score-caption">观望优先</p>
+                <div class="score-ring warn"><b>65</b></div>
+                <p class="score-caption">谨慎执行</p>
               </div>
             </div>
           </div>
           <div class="quick-grid">
-            <div><span>参考价</span><b>4180.59</b></div>
-            <div><span>信心</span><b>低</b></div>
+            <div><span>参考价</span><b>4180.41</b></div>
+            <div><span>信心</span><b>中</b></div>
             <div><span>计划数</span><b>3</b></div>
             <div><span>停止开仓</span><b>04:30</b></div>
           </div>
-          <p class="summary">本地规则版：偏多，信心低。事件模块暂未接 OpenAI，所有数据发布前后按中等事件风险降级处理；今日叠加美国独立日观察假期，美股/美债休市，计划整体降级，只做触发确认，不追突破。</p>
+          <p class="summary">本地规则版：偏多，信心中。事件模块暂未接 OpenAI，所有数据发布前后按中等事件风险降级处理。</p>
         </aside>
 
         <section class="panel" aria-label="今日执行纪律">
@@ -286,7 +286,7 @@
             <li><span>1</span><div><b>未触发不做</b><br>只按计划触发价执行，不因为盘中波动临时追单。</div></li>
             <li><span>2</span><div><b>数据窗口停手</b><br>重要数据公布前后至少 15 分钟停止新开仓。</div></li>
             <li><span>3</span><div><b>停止开仓 04:30</b><br>到点后只管理已有仓位，不再开新单。</div></li>
-            <li><span>4</span><div><b>强制离场 04:50</b><br>不隔夜，避免隔夜持仓费用和流动性风险。</div></li>
+            <li><span>4</span><div><b>僵尸单过滤：48根H1</b><br>按实际交易K线计数，不按自然日；周末休盘不计入持仓时长。</div></li>
           </ul>
         </section>
       </div>
@@ -296,15 +296,15 @@
         <section class="hero-card long" aria-label="主交易计划">
           <div class="card-kicker">
             <span>主交易计划 / P1</span>
-            <strong>B1 · 做多 · 美盘更新</strong>
+            <strong>B1 · 做多 · 亚盘初始</strong>
           </div>
           <h2>均线/VWAP 上方偏多，等待回踩后重新站上触发价，不追高。</h2>
           <div class="execution-grid">
-            <div class="metric xl"><span>入场区</span><strong>4178.86-4182.03</strong></div>
-            <div class="metric focus"><span>触发价</span><strong>4182.03</strong></div>
-            <div class="metric risk"><span>止损</span><strong>4177.41</strong></div>
-            <div class="metric"><span>TP1</span><strong>4186.37</strong><em>0.94R</em></div>
-            <div class="metric"><span>TP2</span><strong>4189.84</strong><em>1.69R</em></div>
+            <div class="metric xl"><span>入场区</span><strong>4178.41-4182.08</strong></div>
+            <div class="metric focus"><span>触发价</span><strong>4182.08</strong></div>
+            <div class="metric risk"><span>止损</span><strong>4176.74</strong></div>
+            <div class="metric"><span>TP1</span><strong>4187.09</strong><em>0.94R</em></div>
+            <div class="metric"><span>TP2</span><strong>4191.10</strong><em>1.69R</em></div>
           </div>
           <div class="rule-grid">
             <article><span>确认条件</span><p>M5 收回触发价上方，且回踩不跌破入场区下沿。</p></article>
@@ -317,23 +317,23 @@
     <section class="review-grid" aria-label="复盘统计总览">
       <article class="review-card">
         <span>累计复盘</span>
-        <strong>5 天</strong>
-        <em>17 笔触发</em>
+        <strong>6 天</strong>
+        <em>19 笔触发</em>
       </article>
       <article class="review-card">
         <span>累计胜率</span>
-        <strong>58.82%</strong>
-        <em>10 赢 / 7 亏</em>
+        <strong>52.63%</strong>
+        <em>10 赢 / 9 亏</em>
       </article>
       <article class="review-card good">
         <span>累计 R</span>
-        <strong>2.59R</strong>
+        <strong>0.59R</strong>
         <em>不含未触发计划</em>
       </article>
       <article class="review-card">
         <span>近 5 日</span>
-        <strong>58.82%</strong>
-        <em>2.59R / 17 笔</em>
+        <strong>50.00%</strong>
+        <em>-0.70R / 14 笔</em>
       </article>
     </section>
     
@@ -348,10 +348,10 @@
         <tr class="long">
           <td class="plan-id"><span>上破预案</span><b>B2 · 做多</b></td>
           <td class="thesis-cell">向上突破方案：只有放量站稳日内压力后才做突破多。</td>
-          <td>4196.88</td>
-          <td class="risk-text">4192.26</td>
-          <td>4201.22</td>
-          <td>4204.69</td>
+          <td>4208.19</td>
+          <td class="risk-text">4202.85</td>
+          <td>4213.20</td>
+          <td>4217.21</td>
           <td class="rule-cell">
             <details>
               <summary>确认/取消</summary>
@@ -366,10 +366,10 @@
         <tr class="short">
           <td class="plan-id"><span>下破预案</span><b>S2 · 做空</b></td>
           <td class="thesis-cell">向下破位方案：只有跌破日内支撑后才顺势做空。</td>
-          <td>4053.70</td>
-          <td class="risk-text">4058.32</td>
-          <td>4049.36</td>
-          <td>4045.89</td>
+          <td>4114.74</td>
+          <td class="risk-text">4120.08</td>
+          <td>4109.73</td>
+          <td>4105.72</td>
           <td class="rule-cell">
             <details>
               <summary>确认/取消</summary>
@@ -391,7 +391,7 @@
         <div><h3>最近一日复盘</h3><p>判断方向、点位和执行结果是否有效。</p></div>
       </div>
       <div class="latest-review-grid">
-        <div><span>日期</span><b>2026-07-02</b></div>
+        <div><span>日期</span><b>2026-07-03</b></div>
         <div><span>方向</span><b>偏多</b></div>
         <div><span>触发/计划</span><b>2/3</b></div>
         <div><span>胜负</span><b>0 / 2</b></div>
@@ -406,7 +406,8 @@
 <tr><td>2026-06-29</td><td>偏空</td><td>低</td><td>3/5</td><td>2</td><td>1</td><td>66.67%</td><td>-0.083R</td></tr>
 <tr><td>2026-06-30</td><td>偏空</td><td>高</td><td>5/5</td><td>4</td><td>1</td><td>80.0%</td><td>3.074R</td></tr>
 <tr><td>2026-07-01</td><td>偏空</td><td>中</td><td>2/3</td><td>1</td><td>1</td><td>50.0%</td><td>0.313R</td></tr>
-<tr><td>2026-07-02</td><td>偏多</td><td>高</td><td>2/3</td><td>0</td><td>2</td><td>0.0%</td><td>-2.0R</td></tr></tbody></table></div>
+<tr><td>2026-07-02</td><td>偏多</td><td>高</td><td>2/3</td><td>0</td><td>2</td><td>0.0%</td><td>-2.0R</td></tr>
+<tr><td>2026-07-03</td><td>偏多</td><td>高</td><td>2/3</td><td>0</td><td>2</td><td>0.0%</td><td>-2.0R</td></tr></tbody></table></div>
           </section>
           <section class="panel">
             <div class="section-head"><div><h3>计划表现</h3><p>按计划 ID 统计，判断哪类预案更有效。</p></div></div>
@@ -414,7 +415,7 @@
 <tr><td>S1</td><td>4</td><td>3</td><td>1</td><td>75.00%</td><td>1.09R</td></tr>
 <tr><td>L1</td><td>3</td><td>2</td><td>1</td><td>66.67%</td><td>0.69R</td></tr>
 <tr><td>B2</td><td>5</td><td>3</td><td>2</td><td>60.00%</td><td>0.15R</td></tr>
-<tr><td>B1</td><td>3</td><td>0</td><td>3</td><td>0.00%</td><td>-3.00R</td></tr></tbody></table></div>
+<tr><td>B1</td><td>5</td><td>0</td><td>5</td><td>0.00%</td><td>-5.00R</td></tr></tbody></table></div>
           </section>
           <section class="panel">
             <div class="section-head"><div><h3>计划流水</h3><p>每条计划的触发、止损和结果。</p></div></div>
@@ -439,12 +440,15 @@
 <tr><td>2026-07-02</td><td>B1</td><td>多</td><td>4056.88</td><td>4045.57</td><td>4067.49</td><td>4075.97</td><td>亏损</td><td>-1</td></tr>
 <tr><td>2026-07-02</td><td>B2</td><td>多</td><td>4119.16</td><td>4107.85</td><td>4129.77</td><td>4138.25</td><td>亏损</td><td>-1</td></tr>
 <tr><td>2026-07-02</td><td>S2</td><td>空</td><td>3952.32</td><td>3963.63</td><td>3941.71</td><td>3933.23</td><td>未触发</td><td></td></tr>
-<tr><td>2026-07-03</td><td>B1</td><td>多</td><td>4181.66</td><td>4173.3</td><td>4189.5</td><td>4195.77</td><td>待复盘</td><td></td></tr>
-<tr><td>2026-07-03</td><td>B2</td><td>多</td><td>4198.05</td><td>4189.69</td><td>4205.89</td><td>4212.16</td><td>待复盘</td><td></td></tr>
-<tr><td>2026-07-03</td><td>S2</td><td>空</td><td>4052.53</td><td>4060.89</td><td>4044.69</td><td>4038.42</td><td>待复盘</td><td></td></tr>
-<tr><td>2026-07-03</td><td>B1</td><td>多</td><td>4182.03</td><td>4177.41</td><td>4186.37</td><td>4189.84</td><td>待复盘</td><td></td></tr>
-<tr><td>2026-07-03</td><td>B2</td><td>多</td><td>4196.88</td><td>4192.26</td><td>4201.22</td><td>4204.69</td><td>待复盘</td><td></td></tr>
-<tr><td>2026-07-03</td><td>S2</td><td>空</td><td>4053.7</td><td>4058.32</td><td>4049.36</td><td>4045.89</td><td>待复盘</td><td></td></tr></tbody></table></div>
+<tr><td>2026-07-03</td><td>B1</td><td>多</td><td>4181.66</td><td>4173.3</td><td>4189.5</td><td>4195.77</td><td>亏损</td><td>-1</td></tr>
+<tr><td>2026-07-03</td><td>B2</td><td>多</td><td>4198.05</td><td>4189.69</td><td>4205.89</td><td>4212.16</td><td>未触发</td><td></td></tr>
+<tr><td>2026-07-03</td><td>S2</td><td>空</td><td>4052.53</td><td>4060.89</td><td>4044.69</td><td>4038.42</td><td>未触发</td><td></td></tr>
+<tr><td>2026-07-03</td><td>B1</td><td>多</td><td>4182.03</td><td>4177.41</td><td>4186.37</td><td>4189.84</td><td>亏损</td><td>-1</td></tr>
+<tr><td>2026-07-03</td><td>B2</td><td>多</td><td>4196.88</td><td>4192.26</td><td>4201.22</td><td>4204.69</td><td>未触发</td><td></td></tr>
+<tr><td>2026-07-03</td><td>S2</td><td>空</td><td>4053.7</td><td>4058.32</td><td>4049.36</td><td>4045.89</td><td>未触发</td><td></td></tr>
+<tr><td>2026-07-06</td><td>B1</td><td>多</td><td>4182.08</td><td>4176.74</td><td>4187.09</td><td>4191.1</td><td>待复盘</td><td></td></tr>
+<tr><td>2026-07-06</td><td>B2</td><td>多</td><td>4208.19</td><td>4202.85</td><td>4213.2</td><td>4217.21</td><td>待复盘</td><td></td></tr>
+<tr><td>2026-07-06</td><td>S2</td><td>空</td><td>4114.74</td><td>4120.08</td><td>4109.73</td><td>4105.72</td><td>待复盘</td><td></td></tr></tbody></table></div>
           </section>
         </section>
       </div>
@@ -453,13 +457,6 @@
         <section class="panel">
           <div class="label">关键数据 / 事件</div>
           <ul class="key-events">
-            <li>
-              <div class="event-row"><time>全天</time><b>美国独立日观察假期：NYSE/Nasdaq 与美国债市休市</b><span>高</span></div>
-              <p>实际 休市 / 预期 休市</p>
-              <em>美盘流动性和美债收益率联动异常，黄金容易出现假突破/滑点；只做低频确认，不追单。</em>
-            </li>
-            
-
             <li>
               <div class="event-row"><time>美盘前后</time><b>美国数据/美债收益率/美元指数需人工核对</b><span>中</span></div>
               <p>实际 待公布 / 预期 待核对</p>
@@ -472,27 +469,26 @@
           <ul class="levels">
             <li class="压力">
               <span>压力</span>
-              <b>4195.44</b>
+              <b>4206.52</b>
               <p>上方压力</p>
             </li>
             
             <li class="分界">
               <span>分界</span>
-              <b>4099.59</b>
+              <b>4163.86</b>
               <p>日内枢轴</p>
             </li>
             
             <li class="支撑">
               <span>支撑</span>
-              <b>4055.14</b>
+              <b>4116.41</b>
               <p>下方支撑</p>
             </li>
             </ul>
         </section>
         <section class="panel">
           <div class="label">禁止交易窗口</div>
-          <ul class="windows"><li><time>20:00 之后</time><p>美国假期美盘流动性异常，容易假突破；若点差扩大或波动抽针，停止新开仓。</p></li>
-<li><time>重要数据/突发消息前后至少15分钟</time><p>低流动性日放大滑点，技术信号必须降级。</p></li>
+          <ul class="windows"><li><time>重要数据前后至少15分钟</time><p>OpenAI 事件核对暂未启用，按保守规则避免数据波动误触发。</p></li>
 <li><time>04:30之后</time><p>停止新开仓，避免隔夜和流动性问题。</p></li></ul>
         </section>
       </aside>
@@ -500,7 +496,7 @@
 
     <section class="section panel">
       <div class="section-head"><div><h3>信息来源</h3><p>用于核对数据日和突发事件。</p></div></div>
-      <div class="sources"><a href='local://bybit-mt5' target='_blank' rel='noreferrer'>Bybit MT5 本地行情快照</a><a href='local://offline-rule-advisor' target='_blank' rel='noreferrer'>OpenAI API 未启用，事件为保守占位</a><a href='https://www.marketwatch.com/' target='_blank' rel='noreferrer'>NYSE/Nasdaq 与美国债市 2026-07-03 休市信息</a></div>
+      <div class="sources"><a href='local://bybit-mt5' target='_blank' rel='noreferrer'>Bybit MT5 本地行情快照</a><a href='local://offline-rule-advisor' target='_blank' rel='noreferrer'>OpenAI API 未启用，事件为保守占位</a></div>
     </section>
   </div>
 </main>
