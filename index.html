@@ -88,7 +88,7 @@
     .bias-title strong { font-size:40px; line-height:1; letter-spacing:-.06em; }
     .score-ring {
       width:74px; height:74px; border-radius:50%; display:grid; place-items:center;
-      border:1px solid var(--line-strong); background:conic-gradient(var(--purple) 43%, rgba(255,255,255,.06) 0);
+      border:1px solid var(--line-strong); background:conic-gradient(var(--purple) 65%, rgba(255,255,255,.06) 0);
       position:relative; flex:0 0 auto;
     }
     .score-ring::after { content:""; position:absolute; inset:7px; border-radius:50%; background:#11101a; }
@@ -230,7 +230,7 @@
         <p class="subtitle">主计划优先，突破/破位/反转预案齐备；盘后统计；硬规则：停开仓 + 48根H1持仓上限。</p>
       </div>
       <div class="status-pills" aria-label="今日状态">
-        <span class="pill">刷新 2026-07-31 14:30</span>
+        <span class="pill">刷新 2026-07-31 20:00</span>
         <span class="pill">交易日 2026-07-31</span>
         <span class="pill warn">事件 中</span>
       </div>
@@ -244,11 +244,11 @@
       </article>
       <article>
         <span>当前生效</span>
-        <strong>欧盘更新 · 2026-07-31 欧盘更新 14:30</strong>
+        <strong>美盘更新 · 2026-07-31 美盘更新 20:00</strong>
       </article>
       <article>
         <span>下次计划</span>
-        <strong>20:00 美盘更新</strong>
+        <strong>次交易日 06:05 亚盘初始</strong>
       </article>
       <article>
         <span>SET / EA</span>
@@ -256,7 +256,7 @@
       </article>
       <article>
         <span>最近生成</span>
-        <strong>2026-07-31T14:30+08:00</strong>
+        <strong>2026-07-31T20:00+08:00</strong>
       </article>
     </section>
     
@@ -267,20 +267,20 @@
           <div>
             <div class="label">今日方向</div>
             <div class="bias-title">
-              <strong>震荡</strong>
+              <strong>偏空</strong>
               <div>
-                <div class="score-ring danger"><b>43</b></div>
-                <p class="score-caption">观望优先</p>
+                <div class="score-ring warn"><b>65</b></div>
+                <p class="score-caption">谨慎执行</p>
               </div>
             </div>
           </div>
           <div class="quick-grid">
-            <div><span>参考价</span><b>4084.08</b></div>
-            <div><span>信心</span><b>低</b></div>
+            <div><span>参考价</span><b>4053.12</b></div>
+            <div><span>信心</span><b>中</b></div>
             <div><span>计划数</span><b>3</b></div>
             <div><span>停止开仓</span><b>04:30</b></div>
           </div>
-          <p class="summary">本地规则版：震荡，信心低。事件模块暂未接 OpenAI，所有数据发布前后按中等事件风险降级处理。</p>
+          <p class="summary">本地规则版：偏空，信心中。事件模块暂未接 OpenAI，所有数据发布前后按中等事件风险降级处理。</p>
         </aside>
 
         <section class="panel" aria-label="今日执行纪律">
@@ -299,15 +299,15 @@
         <section class="hero-card short" aria-label="主交易计划">
           <div class="card-kicker">
             <span>主交易计划 / P1</span>
-            <strong>S1 · 做空 · 欧盘更新</strong>
+            <strong>S1 · 做空 · 美盘更新</strong>
           </div>
           <h2>结构偏弱或震荡偏弱，等待反弹失败后跌回触发价，不追低。</h2>
           <div class="execution-grid">
-            <div class="metric xl"><span>入场区</span><strong>4077.81-4081.84</strong></div>
-            <div class="metric focus"><span>触发价</span><strong>4077.81</strong></div>
-            <div class="metric risk"><span>止损</span><strong>4083.67</strong></div>
-            <div class="metric"><span>TP1</span><strong>4072.32</strong><em>0.94R</em></div>
-            <div class="metric"><span>TP2</span><strong>4067.93</strong><em>1.69R</em></div>
+            <div class="metric xl"><span>入场区</span><strong>4051.57-4054.99</strong></div>
+            <div class="metric focus"><span>触发价</span><strong>4051.57</strong></div>
+            <div class="metric risk"><span>止损</span><strong>4056.54</strong></div>
+            <div class="metric"><span>TP1</span><strong>4046.90</strong><em>0.94R</em></div>
+            <div class="metric"><span>TP2</span><strong>4043.17</strong><em>1.69R</em></div>
           </div>
           <div class="rule-grid">
             <article><span>确认条件</span><p>M5 反弹失败并重新跌回触发价下方。</p></article>
@@ -344,38 +344,38 @@
     <section class="review-grid" aria-label="真实订单复盘总览">
       <article class="review-card">
         <span>真实订单</span>
-        <strong>96 笔</strong>
+        <strong>97 笔</strong>
         <em>来自 MT5 历史成交</em>
       </article>
       <article class="review-card">
         <span>真实胜率</span>
-        <strong>52.08%</strong>
-        <em>50 赢 / 46 亏</em>
+        <strong>52.58%</strong>
+        <em>51 赢 / 46 亏</em>
       </article>
       <article class="review-card danger">
         <span>真实净利</span>
-        <strong>-47.00</strong>
-        <em>PF 0.84</em>
+        <strong>-40.21</strong>
+        <em>PF 0.86</em>
       </article>
       <article class="review-card">
         <span>Expectancy</span>
-        <strong>-0.49</strong>
-        <em>均赢 4.79 / 均亏 6.23</em>
+        <strong>-0.41</strong>
+        <em>均赢 4.83 / 均亏 6.23</em>
       </article>
       <article class="review-card">
         <span>Cost proxy</span>
-        <strong>32.00</strong>
+        <strong>32.40</strong>
         <em>0.01 lot/trade about 0.40</em>
       </article>
       <article class="review-card">
         <span>Gross proxy before cost</span>
-        <strong>-29.53</strong>
+        <strong>-22.34</strong>
         <em>Checks whether cost consumed edge</em>
       </article>
       <article class="review-card">
         <span>Max holding exits</span>
         <strong>0</strong>
-        <em>Trail/breakeven SL 18 trades</em>
+        <em>Trail/breakeven SL 19 trades</em>
       </article>
     </section>
     
@@ -390,10 +390,10 @@
         <tr class="long">
           <td class="plan-id"><span>上破预案</span><b>B2 · 做多</b></td>
           <td class="thesis-cell">向上突破方案：只有放量站稳日内压力后才做突破多。</td>
-          <td>4141.07</td>
-          <td class="risk-text">4135.22</td>
-          <td>4146.56</td>
-          <td>4150.96</td>
+          <td>4140.80</td>
+          <td class="risk-text">4135.82</td>
+          <td>4145.46</td>
+          <td>4149.20</td>
           <td class="rule-cell">
             <details>
               <summary>确认/取消</summary>
@@ -408,10 +408,10 @@
         <tr class="short">
           <td class="plan-id"><span>下破预案</span><b>S2 · 做空</b></td>
           <td class="thesis-cell">向下破位方案：只有跌破日内支撑后才顺势做空。</td>
-          <td>4045.68</td>
-          <td class="risk-text">4051.54</td>
-          <td>4040.19</td>
-          <td>4035.80</td>
+          <td>4045.96</td>
+          <td class="risk-text">4050.93</td>
+          <td>4041.29</td>
+          <td>4037.56</td>
           <td class="rule-cell">
             <details>
               <summary>确认/取消</summary>
@@ -479,10 +479,7 @@
           </section>
           <section class="panel">
             <div class="section-head"><div><h3>计划流水</h3><p>每条计划的触发、止损和结果。</p></div></div>
-            <div class="table-wrap"><table><thead><tr><th>日期</th><th>ID</th><th>方向</th><th>触发</th><th>止损</th><th>TP1</th><th>TP2</th><th>结果</th><th>R</th></tr></thead><tbody><tr><td>2026-07-17</td><td>B2</td><td>多</td><td>4040.89</td><td>4034.94</td><td>4046.47</td><td>4050.94</td><td>未触发</td><td></td></tr>
-<tr><td>2026-07-17</td><td>S2</td><td>空</td><td>3939.71</td><td>3945.67</td><td>3934.13</td><td>3929.67</td><td>未触发</td><td></td></tr>
-<tr><td>2026-07-20</td><td>S1</td><td>空</td><td>3998.59</td><td>4005.0</td><td>3992.57</td><td>3987.76</td><td>盈利</td><td>1.314</td></tr>
-<tr><td>2026-07-20</td><td>B2</td><td>多</td><td>4043.5</td><td>4037.09</td><td>4049.52</td><td>4054.33</td><td>未触发</td><td></td></tr>
+            <div class="table-wrap"><table><thead><tr><th>日期</th><th>ID</th><th>方向</th><th>触发</th><th>止损</th><th>TP1</th><th>TP2</th><th>结果</th><th>R</th></tr></thead><tbody><tr><td>2026-07-20</td><td>B2</td><td>多</td><td>4043.5</td><td>4037.09</td><td>4049.52</td><td>4054.33</td><td>未触发</td><td></td></tr>
 <tr><td>2026-07-20</td><td>S2</td><td>空</td><td>3957.68</td><td>3964.1</td><td>3951.67</td><td>3946.86</td><td>未触发</td><td></td></tr>
 <tr><td>2026-07-20</td><td>S1</td><td>空</td><td>3998.82</td><td>4004.5</td><td>3993.49</td><td>3989.23</td><td>亏损</td><td>-1</td></tr>
 <tr><td>2026-07-20</td><td>B2</td><td>多</td><td>4043.27</td><td>4037.59</td><td>4048.6</td><td>4052.86</td><td>未触发</td><td></td></tr>
@@ -558,19 +555,22 @@
 <tr><td>2026-07-31</td><td>S2</td><td>空</td><td>4026.68</td><td>4032.4</td><td>4021.33</td><td>4017.05</td><td>待复盘</td><td></td></tr>
 <tr><td>2026-07-31</td><td>S1</td><td>空</td><td>4077.81</td><td>4083.67</td><td>4072.32</td><td>4067.93</td><td>待复盘</td><td></td></tr>
 <tr><td>2026-07-31</td><td>B2</td><td>多</td><td>4141.07</td><td>4135.22</td><td>4146.56</td><td>4150.96</td><td>待复盘</td><td></td></tr>
-<tr><td>2026-07-31</td><td>S2</td><td>空</td><td>4045.68</td><td>4051.54</td><td>4040.19</td><td>4035.8</td><td>待复盘</td><td></td></tr></tbody></table></div>
+<tr><td>2026-07-31</td><td>S2</td><td>空</td><td>4045.68</td><td>4051.54</td><td>4040.19</td><td>4035.8</td><td>待复盘</td><td></td></tr>
+<tr><td>2026-07-31</td><td>S1</td><td>空</td><td>4051.57</td><td>4056.54</td><td>4046.9</td><td>4043.17</td><td>待复盘</td><td></td></tr>
+<tr><td>2026-07-31</td><td>B2</td><td>多</td><td>4140.8</td><td>4135.82</td><td>4145.46</td><td>4149.2</td><td>待复盘</td><td></td></tr>
+<tr><td>2026-07-31</td><td>S2</td><td>空</td><td>4045.96</td><td>4050.93</td><td>4041.29</td><td>4037.56</td><td>待复盘</td><td></td></tr></tbody></table></div>
           </section>
           <section class="panel">
             <div class="section-head"><div><h3>入场模型对比</h3><p>突破回踩 BR、普通确认 RX 与旧订单分开统计，不混算。</p></div></div>
-            <div class="table-wrap"><table><thead><tr><th>模型</th><th>笔数</th><th>赢</th><th>亏</th><th>胜率</th><th>平均盈利</th><th>平均亏损</th><th>PF</th><th>净利</th></tr></thead><tbody><tr><td>普通确认 RX</td><td>4</td><td>1</td><td>3</td><td>25.00%</td><td>10.14</td><td>-5.86</td><td>0.58</td><td>-7.44</td></tr>
+            <div class="table-wrap"><table><thead><tr><th>模型</th><th>笔数</th><th>赢</th><th>亏</th><th>胜率</th><th>平均盈利</th><th>平均亏损</th><th>PF</th><th>净利</th></tr></thead><tbody><tr><td>普通确认 RX</td><td>5</td><td>2</td><td>3</td><td>40.00%</td><td>8.46</td><td>-5.86</td><td>0.96</td><td>-0.65</td></tr>
 <tr><td>旧订单</td><td>92</td><td>49</td><td>43</td><td>53.26%</td><td>4.68</td><td>-6.25</td><td>0.85</td><td>-39.56</td></tr></tbody></table></div>
           </section>
           <section class="panel">
             <div class="section-head"><div><h3>真实订单表现</h3><p>来自 MT5 历史成交，按订单备注归因到计划 ID。</p></div></div>
             <div class="table-wrap"><table><thead><tr><th>ID</th><th>笔数</th><th>赢</th><th>亏</th><th>胜率</th><th>净利</th></tr></thead><tbody><tr><td>S2</td><td>17</td><td>10</td><td>7</td><td>58.82%</td><td>5.59</td></tr>
+<tr><td>S1</td><td>53</td><td>30</td><td>23</td><td>56.60%</td><td>-13.82</td></tr>
 <tr><td>B2</td><td>5</td><td>1</td><td>4</td><td>20.00%</td><td>-15.59</td></tr>
-<tr><td>B1</td><td>22</td><td>10</td><td>12</td><td>45.45%</td><td>-16.39</td></tr>
-<tr><td>S1</td><td>52</td><td>29</td><td>23</td><td>55.77%</td><td>-20.61</td></tr></tbody></table></div>
+<tr><td>B1</td><td>22</td><td>10</td><td>12</td><td>45.45%</td><td>-16.39</td></tr></tbody></table></div>
           </section>
           <section class="panel">
             <div class="section-head"><div><h3>Real order details</h3><p>Public version is sanitized: summary only, no per-order open/close records.</p></div></div>
